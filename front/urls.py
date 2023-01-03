@@ -6,5 +6,6 @@ from front import views
 router = DefaultRouter()
 
 urlpatterns = [
-    path("clientes/", views.cliente, name="clientes")
+    path("clientes/", views.cliente, name="clientes"),
+    path("", views.index, name="index")
 ]
